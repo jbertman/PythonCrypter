@@ -1,4 +1,4 @@
-crypter - jasondbertman@gmail.com
+Python Crypter
 =======
 Uses AES to run encrypted shellcode using Python and ctypes
 
@@ -13,3 +13,5 @@ Used to encrypt shellcode. Not exactly neccessary, but useful if you're paranoid
 
 stub.py
 Decrypts "CodeSection" and runs the returned file in memory. 
+
+This can all be packed into an executable with PyInstaller. Be warned that this is scan-time undetectable, NOT run-time undetectable. The current shellcode in the scripts runs calc.exe. Feel free to change it to whatever you want.
