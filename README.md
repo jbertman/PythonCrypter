@@ -15,3 +15,5 @@ Used to encrypt shellcode. Not exactly neccessary, but useful if you're paranoid
 Decrypts "CodeSection" and runs the returned file in memory. 
 
 This can all be packed into an executable with PyInstaller. Be warned that this is scan-time undetectable, NOT run-time undetectable. The current shellcode in the scripts runs calc.exe. Feel free to change it to whatever you want.
+
+NOTE: This is just a PoC, the crypto functions use a static string with a random value that is embedded in the shellcode. 
